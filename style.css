@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  color: #fff;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#cursor{
+  height: 20px;
+  width: 20px;
+  background-color: #95C11E;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+}
+#cursor-blur{
+  height: 300px;
+  width: 300px;
+  background-color: #96c11e;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(150px);
+  z-index: 9;
+}
+
+#nav{
+  height: 145px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 150px; /* top-bottom right-left*/
+  gap: 50px ;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 99;
+}
+#nav img{
+  height: 75px;
+}
+#nav h4{
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+#main{
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.4); /* here 4th value(ranged from 0-1) 0.5 is used increase transparency. 0=fully transparent, 1=not transparent */
+}
+
+#page1{
+  height: 100vh; /* when using the %, we are taking parent's x% height*/
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* used to make elements in column, which was flexed in rows*/
+  text-align: center;
+  z-index: 10;
+}
+#page1 h1{
+  font-size: 140px;
+  font-weight: 900;
+  position: relative;
+}
+/* pseudo element */
+#page1 h1::before{
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: #000;
+  top: -5px;
+  left: -5px;
+  -webkit-text-stroke: 1px #95C11E;
+  z-index: -1;
+}
+#page1 h2{
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+#page1 p{
+  font-size: 24px;
+  font-weight: 400;
+  width: 50%;
+}
+
+#page2{
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
