@@ -249,3 +249,27 @@ video{
 .card:hover{
   transform: rotate3d(1,1,0,20deg);
 }
+
+#green-div{
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left bottom,#2AA635,#95C11E); /* diagonaly shading */
+}
+#green-div h4{
+  width: 50%;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#green-div p{
+  font-weight: 800;
+  font-size: 35px;
+  color: #000;
+}
+#green-div img{
+  height: 100%;
+  object-fit: cover;
+  width: 15%;
+}
