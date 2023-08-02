@@ -250,6 +250,7 @@ video{
   transform: rotate3d(1,1,0,20deg);
 }
 
+/* page2 - green-div */
 #green-div{
   height: 45vh;
   display: flex;
@@ -272,4 +273,35 @@ video{
   height: 100%;
   object-fit: cover;
   width: 15%;
+}
+
+/* Page 3 */
+#page3{
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+#page3>p{
+  font-size: 30px;
+  width: 60%;
+  text-align: center;
+  font-weight: 800;
+  line-height: 50px;
+}
+#page3 img{
+  width: 65px;
+  height: 55px;
+  position: absolute;
+}
+#page3 #colon1{
+  left: 15%;
+  top: 15%;
+}
+#page3 #colon2{
+  right: 15%;
+  bottom: 15%;
 }
