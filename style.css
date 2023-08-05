@@ -11,6 +11,21 @@ html,body{
   width: 100%;
 }
 
+*::selection{
+  background-color: #fff;
+  color: #95C11E;
+}
+
+body::-webkit-scrollbar{
+  display: block;
+  width: 10px;
+  background-color: #000;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #95C11E;
+  border-radius: 10px;
+}
+
 /* cursor & cursor-blur */
 #cursor{
   height: 20px;
@@ -320,7 +335,7 @@ video{
   height: 55%;
   width: 26%;
   overflow: hidden;
-  font-size: 38px;
+  font-size: 28px;
   position: relative;
   border-radius: 15px;
 }
@@ -355,9 +370,10 @@ video{
   font-size: 80px;
   font-weight: 800;
   position: absolute;
-  top: -20px;
+  top: -15px;
   color: #000;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 1px #fff;
+  z-index: 10;
 }
 
 /* footer */
